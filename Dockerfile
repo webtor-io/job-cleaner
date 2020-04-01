@@ -13,4 +13,4 @@ COPY run.sh .
 
 RUN chmod +x run.sh
 
-CMD ["./run.sh"]
+CMD ["timeout", "60", "./run.sh"]
